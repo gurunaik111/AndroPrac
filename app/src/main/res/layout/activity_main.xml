@@ -37,7 +37,7 @@
         android:layout_gravity="bottom"
         app:itemIconTint="@drawable/bottom_nav_draw"
         app:itemTextColor="@color/bottomCol"
-        app:itemTextStyle=""
+
         android:background="?android:attr/windowBackground"
         app:menu="@menu/navigation"/>
 
