@@ -1,5 +1,7 @@
 package com.guru.parentapp2;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -10,6 +12,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
+ //  String School= getIntent().getStringExtra("School-q");
+ //  String Div= getIntent().getStringExtra("Div-q");
 
     //..for logging..
  //   private static final String TAG = "MainActivity";
@@ -17,17 +21,25 @@ public class MainActivity extends AppCompatActivity {
     //..The request code is supposed to be unique?..
   //  public static final int MY_REQUEST_CODE = 123;
 
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            FragmentManager fragmentManager=getFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+
+
+
+
             switch (item.getItemId()) {
                 case R.id.notice:
-                    mTextMessage.setText(R.string.title_notice);
+
+
                     return true;
                 case R.id.Calendar:
-                    mTextMessage.setText(R.string.title_calendar);
+
                     return true;
                 case R.id.classNotice:
                     mTextMessage.setText(R.string.title_classnotice);

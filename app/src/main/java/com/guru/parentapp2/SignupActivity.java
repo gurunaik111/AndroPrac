@@ -3,7 +3,6 @@ package com.guru.parentapp2;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 
@@ -16,14 +15,18 @@ public class SignupActivity extends Activity{
     public static final String EXTRA_STRING_NAME="extraStringName";
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+       setContentView(R.layout.activity_signup);
         Button submitButton= (Button)findViewById(R.id.button_submit);
+
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //String  ns= (String) findViewById(R.id.schoolName);
                 Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+              //  intent.putExtra("School-q","oxford");
+               // intent.putExtra("Div-q","asd");
                 startActivity(intent);
             }
         });
@@ -50,7 +53,7 @@ public class SignupActivity extends Activity{
         iData.putExtra("calling ","Signup");
         startActivity(iData);
 
-     /*   iData.putExtra(
+       iData.putExtra(
                 EXTRA_STRING_NAME,
                 "returnValueAsString" );
 
