@@ -9,14 +9,20 @@
     android:orientation="vertical"
     tools:context="com.guru.parentapp2.MainActivity">
 
-    <RelativeLayoutLayout
-        android:id="@+id/frag_content"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_weight="1">
 
-        
-    </RelativeLayoutLayout>
+
+        <fragment
+            android:name="com.guru.parentapp2.CNotice"
+            android:id="@+id/frag_place"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_cnotice">
+
+        </fragment>
+
+
+
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"

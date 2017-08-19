@@ -1,5 +1,6 @@
 package com.guru.parentapp2;
 
+import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
@@ -7,11 +8,10 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mTextMessage;
+  //  private TextView mTextMessage;
  //  String School= getIntent().getStringExtra("School-q");
  //  String Div= getIntent().getStringExtra("Div-q");
 
@@ -27,22 +27,33 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            FragmentManager fragmentManager=getFragmentManager();
-            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            Fragment fragment;
+           // FragmentManager fragmentManager=getFragmentManager();
+            //FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
 
 
 
 
             switch (item.getItemId()) {
                 case R.id.notice:
-
+                    fragment=new CNotice();
+                    FragmentManager fm=getFragmentManager();
+                    FragmentTransaction ft=fm.beginTransaction();
+                    ft.replace(R.id.frag_place,fragment).commit();
 
                     return true;
                 case R.id.Calendar:
+                    fragment=new SNotice();
+                    FragmentManager f2=getFragmentManager();
+                    FragmentTransaction f3=f2.beginTransaction();
+                    f3.replace(R.id.frag_place,fragment).commit();
 
                     return true;
                 case R.id.classNotice:
-                    mTextMessage.setText(R.string.title_classnotice);
+                    fragment=new CNotice();
+                    FragmentManager f5=getFragmentManager();
+                    FragmentTransaction f6=f5.beginTransaction();
+                    f6.replace(R.id.frag_place,fragment).commit();
                     return true;
             }
             return false;
@@ -55,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mTextMessage = (TextView) findViewById(R.id.message);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }

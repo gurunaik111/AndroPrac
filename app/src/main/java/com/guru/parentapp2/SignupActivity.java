@@ -6,13 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by GuRu on 12/08/2017.
- */
+
 
 public class SignupActivity extends Activity{
 
-    public static final String EXTRA_STRING_NAME="extraStringName";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
