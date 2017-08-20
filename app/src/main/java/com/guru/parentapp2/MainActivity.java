@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
-           // FragmentManager fragmentManager=getFragmentManager();
-            //FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
+            FragmentManager fragmentManager=getFragmentManager();
+            FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
 
 
 
@@ -37,23 +37,17 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.notice:
                     fragment=new CNotice();
-                    FragmentManager fm=getFragmentManager();
-                    FragmentTransaction ft=fm.beginTransaction();
-                    ft.replace(R.id.frag_place,fragment).commit();
+                    fragmentTransaction.replace(R.id.frag_place,fragment).commit();
 
                     return true;
                 case R.id.Calendar:
                     fragment=new SNotice();
-                    FragmentManager f2=getFragmentManager();
-                    FragmentTransaction f3=f2.beginTransaction();
-                    f3.replace(R.id.frag_place,fragment).commit();
+                    fragmentTransaction.replace(R.id.frag_place,fragment).commit();
 
                     return true;
                 case R.id.classNotice:
                     fragment=new CNotice();
-                    FragmentManager f5=getFragmentManager();
-                    FragmentTransaction f6=f5.beginTransaction();
-                    f6.replace(R.id.frag_place,fragment).commit();
+                    fragmentTransaction.replace(R.id.frag_place,fragment).commit();
                     return true;
             }
             return false;

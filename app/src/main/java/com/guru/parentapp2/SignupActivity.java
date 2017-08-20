@@ -33,6 +33,9 @@ public class SignupActivity extends Activity{
 
 
     }
+
+    public void onSubmitButtonClick(View view) {
+    }
 /*
     TextView schoolName=(TextView) findViewById(R.id.schoolName);
     TextView studClass=(TextView) findViewById(R.id.studentClass);
