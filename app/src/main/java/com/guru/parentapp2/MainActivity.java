@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     //..The request code is supposed to be unique?..
   //  public static final int MY_REQUEST_CODE = 123;
 
-
+// Ye maine ek comment line add kia hai...dih raha toh ek msg kar ... whatsapp pe///
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
