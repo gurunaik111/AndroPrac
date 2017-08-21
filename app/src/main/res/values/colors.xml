@@ -3,6 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="bottomCol">#FF4081</color>
-    <color name="pgbground">#90CAF9</color>
+    <color name="bottomCol">#cd4054</color>
+    <color name="red">#FF4444</color>
+    <color name="white">#FFFFFF</color>
 </resources>
