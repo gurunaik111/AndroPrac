@@ -13,7 +13,7 @@ public class SignupActivity extends Activity{
 
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) { //click
         super.onCreate(savedInstanceState);
        setContentView(R.layout.activity_signup);
         Button submitButton= (Button)findViewById(R.id.button_submit);
@@ -30,9 +30,8 @@ public class SignupActivity extends Activity{
         });
 
 
-
-
     }
+
 
     public void onSubmitButtonClick(View view) {
     }
