@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+//accha.. samja...
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
     //..The request code is supposed to be unique?..
   //  public static final int MY_REQUEST_CODE = 123;
 
-// Ye maine ek comment line add kia hai...dih raha toh ek msg kar ... whatsapp pe///
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.notice:
-                    fragment=new CNotice();
+                    fragment=new CNotice();// ye yaha aa raha tha error
                     fragmentTransaction.replace(R.id.frag_place,fragment).commit();
 
                     return true;

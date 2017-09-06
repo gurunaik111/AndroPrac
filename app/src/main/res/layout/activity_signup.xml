@@ -43,4 +43,10 @@
         android:text="Submit"
         android:onClick="onSubmitButtonClick"/>
 
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Remember my credentials" />
+
 </LinearLayout>

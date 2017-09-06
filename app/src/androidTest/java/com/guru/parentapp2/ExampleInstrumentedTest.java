@@ -24,3 +24,4 @@ public class ExampleInstrumentedTest {
         assertEquals("com.guru.parentapp2", appContext.getPackageName());
     }
 }
+//sun

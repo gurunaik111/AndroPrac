@@ -12,7 +12,9 @@ public class CNotice extends android.app.Fragment {
 
 
     public CNotice() {
-        // Required empty public constructor
+        // Required empty public constructor likha nai thaa.. apne aap nhi samajta usko package ka??
+        // do package tha ek default n ek project ka ... me project ka utha raha tha wo default le raha tha.. mene b woi socha tha
+        //acha.. dot net me samajta usko
     }
 
 
@@ -28,3 +30,6 @@ public class CNotice extends android.app.Fragment {
         return view;
     }
 }
+//sun ab ye sab activities banaya hai usme sab me d.
+// kisme
+//
