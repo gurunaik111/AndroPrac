@@ -44,6 +44,17 @@ public class LogoScreen extends android.app.Activity {
             @Override
             public void onClick(View view) {
                 Intent loginActivity =  new Intent(LogoScreen.this, LoginActivity.class);
+                loginActivity.putExtra("btnTeacherLogin","Teacher");
+                startActivity(loginActivity);
+            }
+        });
+
+        btnStudnetLogin= (Button) findViewById(R.id.btnStudnetLogin);
+        btnStudnetLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             Intent loginActivity = new Intent(LogoScreen.this, LoginActivity.class);
+                loginActivity.putExtra("btnStudentLogin","Student");
                 startActivity(loginActivity);
             }
         });

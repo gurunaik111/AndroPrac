@@ -46,7 +46,8 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".TeacherOrSrudent"></activity>
+        <activity android:name=".TeacherOrSrudent" />
+        <activity android:name=".LoginsCustom"></activity>
     </application>
 
 </manifest>
