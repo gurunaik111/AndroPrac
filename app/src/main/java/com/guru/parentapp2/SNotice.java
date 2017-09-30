@@ -17,7 +17,7 @@ public class SNotice extends android.app.Fragment {
 
 
     public SNotice() {
-        // Required empty public constructor
+
     }
 
 
